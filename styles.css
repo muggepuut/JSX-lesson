@@ -1,9 +1,11 @@
+/* Reset defaults for predictable spacing and sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Center the pricing section on a soft neutral background */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +16,7 @@ body {
     padding: 20px;
 }
 
+/* Horizontal card layout with consistent spacing */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,7 @@ body {
     align-items: flex-start;
 }
 
+/* Shared card shell: size, surface, and internal padding */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +38,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Top content block (title, price, and feature copy) */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Plan name styling */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +53,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row aligns amount and period on one baseline */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +61,38 @@ body {
     align-items: baseline;
 }
 
+/* Main price value (e.g., Free or $20) */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Price period label (e.g., /mo.) */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Space below feature block before CTA button */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Intro text above features list */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Remove default bullet styling */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Feature row with icon + text alignment */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +101,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark icon spacing and weight */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +109,7 @@ body {
     font-weight: 400;
 }
 
+/* Base pill-style button used by all CTAs */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,27 +124,33 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Shared hover state for secondary button */
 .download-button:hover {
     background-color: #D8D6CE;
 }
 
+/* Shared active state for secondary button */
 .download-button:active {
     background-color: #D8D6CE;
 }
 
+/* Primary CTA variation (dark fill) */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Primary CTA hover */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Primary CTA active */
 .download-button.primary:active {
     background-color: #333;
 }
 
+/* Floating label that identifies the page version */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +164,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Emphasized part of the page label text */
 .page-label strong {
     color: #333;
 }

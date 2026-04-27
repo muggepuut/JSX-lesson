@@ -153,16 +153,16 @@ body {
 .download-button.tertiary {
     background-color: transparent;
     color: #333;
-    border: 1px solid #D8D6CE;
+    border: 1px solid #e6e5e0;
 }
 
 .download-button.tertiary:hover {
-    background-color: #D8D6CE;
+    background-color: #e6e5e0;
     color: #333;
 }
 
 .download-button.tertiary:active {
-    background-color: #D8D6CE;
+    background-color: #e6e5e0;
 }
 /* Floating label that identifies the page version */
 .page-label {
